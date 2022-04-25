@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Onodwa Siyotula
+        220087016
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>       
+    <p style="text-align: center;" id="test"></p>
+
+    <form action="" method="post" name = "formName" id="formName">
+        <h2 id="head" style="text-align: center;">Log in</h2>
+
+        <!-- <label for="">Username</label> -->
+        <input type="text" name="name" id="name" placeholder="username">
+    
+        <!-- <label for="">Password</label> -->
+        <input type="password" name="password" id="password" placeholder="password">
+
+        <input type="submit" value="submit" onclick="validate()" id="submit">
+
+        <div class="icons">
+            <a href="https://www.youtube.com/channel/UCErVi3YiUOS1l3nt8nt-usg?sub_confirmation=1" target="_blank"><img src="images/youtube.png" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100007101915734"><img src="images/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/odwasiyotula/"><img src="images/instagram.png" alt=""></a>
+        </div>
+
+        <a href="signup.html" id="signUp">Sign Up</a>
+    
+    </form>
+    <!-- <script src="test.js"></script> -->
+    <script src="file.js"></script>
+    <script>
+        let updatedObject = sessionStorage.getItem('updatedObject');
+        let toObject = JSON.parse(updatedObject);
+        obj.users.push(toObject[0]);
+        console.log(obj);
+        // console.log(obj.users.push(toObject));
+    </script>
+</body>
+</html>

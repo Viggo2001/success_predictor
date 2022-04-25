@@ -1,0 +1,553 @@
+/**
+ * Onodwa Siyotula
+ * 220087016
+ * 
+ */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: lighter;
+    background-image: linear-gradient(to right, rgb(68, 75, 177), rgb(20, 49, 68), rgb(17, 37, 48));
+    /* background-repeat: no-repeat; */
+    
+}
+
+#formName input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+    height: 28px;
+    width: 65%;
+    outline: 0;
+    border: none;
+    border-bottom: 0.1px solid rgb(163, 155, 155);
+}
+
+#formName {
+    text-align: center;
+    /* border: solid black 1px; */
+    padding-top: 30px;
+    width: 400px;
+    margin: auto;
+    margin-top: 100px;
+    padding-bottom: 52px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+}
+
+#formName #signUp{
+    float: left;
+    margin-left: 17%;
+    text-decoration: none;
+    font-size: small;
+    color: darkcyan;
+}
+
+#formName #submit{
+    width: 68%;
+    background-color: green;
+    border: none;
+    color: azure;
+    cursor: pointer;
+    margin-top: 32px;
+    border-radius: 20px;
+}
+
+#formName #submit:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+/* MAIN PAGE */
+
+.nav-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 10%;
+}
+
+nav{
+    color: rgb(230, 223, 223);
+    padding-top: 17px;
+    padding-bottom: 17px;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('images/wits.jpg');
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(65, 75, 117);
+    padding: 8px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+nav a:hover{
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+nav h2{
+    font-weight: lighter;
+}
+
+.banner {
+    color: #fff;
+    background-color: rgb(43, 95, 146);
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.video h2 {
+    font-weight: lighter;
+    border-bottom: solid rgb(167, 161, 161) 1px;
+    padding-bottom: 20px;
+    background-color: rgb(167, 161, 161);
+    padding-top: 20px;
+    color: rgb(248, 244, 244);
+    background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+    border-radius: 30px 30px 0 0;
+}
+
+.video {
+    text-align: center;
+    background-image: linear-gradient(45deg, #d8d8d8, rgb(255, 255, 255));
+    margin-left: 235px;
+    margin-right: 235px;
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0, 0.9);
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 30px 30px;
+}
+
+.video a {
+    text-decoration: none;
+    background-color: rgb(36, 36, 107);
+    padding: 10px;
+    color: #fff;
+}
+
+.video a:hover {
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+
+#calculateAverage{
+    background-image: linear-gradient(45deg, #d8d8d8, rgb(255, 255, 255));
+    width: 65%;
+    margin: auto;
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0, 0.9);
+    padding-bottom: 30px;
+    border-radius: 30px;
+}
+
+#header{
+    font-weight: lighter;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    border-radius: 30px 30px 0 0;
+    background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+}
+
+#calculateAverage h4{
+    padding-left: 35px;
+    font-weight: lighter;
+}
+
+#radio {
+    display: -webkit-inline-flex;
+    margin-left: 38%;
+    margin-right: 48%;
+}
+
+#radio label p{
+    font-size: small;
+}
+
+#fmale{
+    margin-left: 40%;
+}
+
+#formName #male{
+    width: 20px;
+    height: 20px;
+}
+
+#formName #female{
+    width: 20px;
+    height: 20px;
+}
+
+#list {
+    margin-top: -10px;
+    padding-bottom: 0px;
+    margin-left: 30%;
+    /* margin-right: 20%; */
+}
+
+#list input{
+    border: solid black 0px;
+    display: inline;
+    height: 23px;
+    outline: 0;
+    padding-top: 3px;
+}
+
+
+
+#add {
+    width: 50px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    background-color: rgb(75, 45, 158);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#add:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.list-class {
+    padding-left: 35px;
+}
+
+#delete {
+    margin-left: 35px;
+    padding: 8px;
+    background-color: rgb(75, 45, 158);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#delete:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+#mark {
+    width: 40px;
+}
+
+::placeholder {
+    color: var(--c, grey);
+}
+
+#quiz {
+    background-color: #fff;
+    width: 65%;
+    margin: auto;
+    margin-top: 40px;
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0, 0.9);
+    padding-bottom: 30px;
+    /* margin-bottom: 800px; */
+    padding-top: 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(45deg, #d8d8d8, rgb(255, 255, 255));
+}
+
+
+.box {
+    border-radius: 0 20px 0 0;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(45deg, #654ea3, #eaafc8);
+    transform: skewY(-6deg);
+}
+
+.content {
+    transform: skewY(6deg);
+    color: #fff;
+}
+
+#quiz h4 {
+    padding-left: 35px;
+    font-weight: lighter;
+}
+
+#quiz h2 {
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#select {
+    margin-left: 35px;
+}
+
+#quiz input {
+    margin-left: 35px;
+}
+
+#container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#result {
+    text-align: center;
+    margin: auto;
+    background-color: rgb(75, 45, 158);
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+#result:hover{
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+
+.popUp {
+    width: 50%;
+    margin-left: 50%;
+    /* margin-right: 1%; */
+    margin-top: -400px;
+    transition: all 300ms ease-in-out;
+    background-color: rgb(226, 221, 221);
+    opacity: 0;
+    padding: 50px;
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 300ms ease-in-out, top 100ms ease-in-out, transform 1000ms ease-in-out;
+    box-shadow: 0 8px 12px 0 rgb(0, 0, 0, 0.9);
+    text-align: center;
+    overflow: auto;
+    border-radius: 20px;
+    /* color: #fff; */
+    background-color: #fff;
+}
+
+.popUp.active {
+    opacity: 1;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 300ms cubic-bezier(0.18, 0.89, 0.43, 1.19);
+}
+
+.popUp.backdrop {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.popUp .btn button {
+    border: none;
+    color: #fff;
+    padding: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(57, 72, 139);
+    transition: all 300ms ease-in-out;
+    text-transform: uppercase;
+}
+
+.popUp .btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popUp .title {
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    margin-top: 300px;
+    background-color: black;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+footer{
+    margin-bottom: -20px;
+}
+
+.icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .video {
+        width: 65%;
+        margin: auto;
+    }
+
+    .video video {
+        width: 80%;
+    }
+
+    #list input {
+        width: 120px;
+    }
+    
+    #list #mark {
+        width: 30px;
+    } 
+
+    #formName {
+        width: 90%;
+        height: 700px;
+        font-size: 24px;
+        padding-bottom: 90px;
+    }
+
+    #formName input {
+        font-size: larger;
+        margin-bottom: 40px;
+    }
+
+    #formName #male {
+        width: 34px;
+        height: 34px;
+    }
+
+    #formName #female {
+        width: 34px;
+        height: 34px;
+    }
+
+    #formName #radio p {
+        font-size: larger;
+    }
+
+    #formName #submit {
+        height: 60px;
+    }
+
+    #formName a {
+        font-size: larger;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #list {
+        margin-left: 20%;
+    }
+
+    nav h2 {
+        margin-left: 35%;
+    }
+
+    #formName {
+        width: 80%;
+        height: 500px;
+        font-size: 20px;
+        padding-bottom: 90px;
+    }
+
+    #formName input {
+        font-size: larger;
+        margin-bottom: 20px;
+    }
+
+    #radio {
+        margin-left: 130px;
+    }
+
+    /* .video a{
+        margin-right: 10%;
+        margin-left: 10%;
+
+    } */
+}
+
+@media screen and (max-width: 414px) {
+    nav h2 {
+        margin-left: 30%;
+    }
+
+    #formName {
+        font-size: large;
+    }
+
+    #quiz h4 {
+        margin-right: 35px;
+    }
+
+    #radio {
+        margin-left: 80px;
+    }
+
+    #formName #submit {
+        height: 40px;
+    }
+
+    .box {
+        padding-bottom: 70px;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner p {
+        font-size: smaller;
+    }
+
+    #list {
+        margin-top: 50px;
+    }
+
+    #formName {
+        font-size: medium;
+        height: 400px;
+    }
+
+    #radio {
+        margin-left: 50px;
+    }
+
+    #formName #male {
+        width: 24px;
+        height: 24px;
+    }
+
+    #formName #female {
+        width: 24px;
+        height: 24px;
+    }
+
+    #formName #submit {
+        height: 23px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .video a {
+        font-size: 10px;
+    }
+
+    .content h2{
+        font-size: 22px;
+    }
+
+    .box {
+        padding-bottom: 70px;
+        border-radius: 0;
+    }
+}

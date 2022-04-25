@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Onodwa Siyotula
+        220087016
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3 style="text-align: center;" id="successMsg"></h3>
+    <form action="" method="post" name = "formName" id="formName" class="signUp">
+        <h2 id="head" style="text-align: center;">Sign Up</h2>
+
+        <input type="text" name="fname" id="fname" placeholder="first name" class="code" required>
+
+        <input type="text" name="lname" id="lname" placeholder="last name" required>
+
+        <div class="gender" id="radio">
+            <label for="male">
+                <input type="radio" value="male" name="gender" class="gender" id="male" required>
+                <p>Male</p>
+                <span></span>
+            </label>
+
+            <label for="female" class="radio" id="fmale">
+                <input type="radio" value="female" name="gender" class="gender" id="female" required>
+                <p>Female</p>
+                <span></span>
+            </label>
+        </div>
+
+        <input type="number" name="" id="grd" placeholder="grade" maxlength="100" minlength="0" required>
+
+        <input type="text" name="name" id="setName" placeholder="username" class="uname" required>
+    
+        <input type="password" name="password" id="setPassword" placeholder="password" class="code" required>
+
+        <input type="submit" value="submit" onclick="signMember()" id="submit">
+        <a href="index.html" id="signUp">Login</a>
+    
+    </form>
+    <script src="file.js"></script>
+</body>
+</html>

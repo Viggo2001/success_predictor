@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Onodwa Siyotula
+        220087016
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="head">
+                <h2 id="name">Welcome</h2>
+            </div>
+            <div class="btn">
+                <a href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <p style="text-align: center;">Find out if you have a chance of passing this year</p>
+    </div>
+
+    <main>
+
+        <div class="video">
+            <h2>Video explanation</h2>
+            <video width="450" height="300" controls>
+                <source src="explanation.mov">
+            </video><br><br><br>
+            <a href="https://www.youtube.com/channel/UCErVi3YiUOS1l3nt8nt-usg?sub_confirmation=1" target="_blank">Visit my youtube channel</a>
+        </div>
+
+        <div id="calculateAverage">
+            <h2 style="text-align: center;" id="header">Your Details</h2>
+            <h4 id="firstName">Name:</h4>
+            <h4 id="lastName">Surname:</h4>
+            <h4 id="gradeID">Grade:</h4>
+
+            <form action="" id="list">
+                <label for="" id="modules"><strong>Subjects/Modules</strong></label><br><br>
+                <label for="" id="flag"></label><br>
+                <input type="text" placeholder="Enter Subject Here" id="subjectInput">
+                <input type="number" id="mark" placeholder="%" maxlength="100" minlength="0" required>
+                <button id="add" onclick="addModule()">ADD</button>
+            </form>
+        
+            <p id='subject' class="list-class">None</p>
+            <h4 id='average'></h4>
+            <button id="delete" onclick="deleteModule()">CLEAR</button>
+        </div>
+        
+        <div id="quiz">
+
+            <div class="box">
+
+                <div class="content">
+                    
+                    <h2>Answer 2 more questions</h2>
+                    <h4>Are you happy at university right now?</h4>
+                        <select name="yes-no" id="select" onchange="getAnswerOfFirstQuestion()">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+
+                    <h4>How often do you attend lectures?</h4>
+                    <form action="" id="questions">
+                        <input type="radio" name="school" id="neverID" value="Never">
+                        <label for="">Never</label>
+                        <br>
+                        <input type="radio" name="school" value="Sometimes" id="sometimesID">
+                        <label for="">Sometimes</label>
+                        <br>
+                        <input type="radio" name="school" value="Always" id="alwaysID">
+                        <label for="">Always</label>
+                        <br>
+            </form>
+
+                </div>
+
+            </div>
+
+            <div id="container">
+                <button id="result" >GET RESULTS</button>
+            </div>
+        </div>
+
+        <div class="popUp">
+            <div class="title">
+                Results
+            </div>
+            <div class="description">
+                
+            </div>
+            <div class="btn">
+                <button id="popDown-btn">Dismiss</button>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>All Rights Reserved &copy</p>
+    </footer>
+
+    <script>
+        let name = sessionStorage.getItem('personName');
+        document.getElementById('name').innerHTML += ' ' + name;
+
+        let firstName = sessionStorage.getItem('fname');
+        document.getElementById('firstName').innerHTML += ' ' + firstName;
+
+        let lastName = sessionStorage.getItem('lname');
+        document.getElementById('lastName').innerHTML += ' ' + lastName;
+
+        let gradeVar = sessionStorage.getItem('grade');
+        document.getElementById('gradeID').innerHTML += ' ' + gradeVar;
+    </script>
+    <script src="file.js"></script>
+    <script src="more.js"></script>
+</body>
+</html>
